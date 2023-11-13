@@ -258,8 +258,9 @@ if args.multimodal_pipeline is not None:
     add_extension('multimodal')
 
 # Activate the API extension
-if args.api or args.public_api:
-    add_extension('openai', last=True)
+if args.api:
+    # add_extension('openai', last=True)
+    add_extension('api', last=True)
 
 # Load model-specific settings
 with Path(f'{args.model_dir}/config.yaml') as p:

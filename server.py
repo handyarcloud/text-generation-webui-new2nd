@@ -9,7 +9,6 @@ os.environ['GRADIO_ANALYTICS_ENABLED'] = 'False'
 os.environ['BITSANDBYTES_NOWELCOME'] = '1'
 warnings.filterwarnings('ignore', category=UserWarning, message='TypedStorage is deprecated')
 warnings.filterwarnings('ignore', category=UserWarning, message='Using the update method is deprecated')
-warnings.filterwarnings('ignore', category=UserWarning, message='Field "model_name" has conflict')
 
 with RequestBlocker():
     import gradio as gr
